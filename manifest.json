@@ -1,0 +1,83 @@
+{
+  "background": {
+    "scripts": [
+      "src/js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+    "matches": [
+    "*://*.ad.nl/*",
+    "*://*.afr.com/*",
+    "*://*.americanbanker.com/*",
+    "*://*.bizjournals.com/*",
+    "*://*.bloomberg.com/*",
+    "*://*.bloombergquint.com/*",
+    "*://*.businessinsider.com/*",
+    "*://*.caixinglobal.com/*",
+    "*://*.canberratimes.com.au/*",
+    "*://*.economist.com/*",
+    "*://*.ed.nl/*",
+    "*://*.elpais.com/*",
+    "*://*.estadao.com.br/*",
+    "*://*.examiner.com.au/*",
+    "*://*.firstthings.com/*",
+    "*://*.ft.com/*",
+    "*://*.haaretz.co.il/*",
+    "*://*.ledevoir.com/*",
+    "*://*.leparisien.fr/*",
+    "*://*.medium.com/*",
+    "*://*.mexiconewsdaily.com/*",
+    "*://*.nytimes.com/*",
+    "*://*.nzherald.co.nz/*",
+    "*://*.parool.nl/*",
+    "*://*.repubblica.it/*",
+    "*://*.sfchronicle.com/*",
+    "*://*.sloanreview.mit.edu/*",
+    "*://*.techinasia.com/*",
+    "*://*.telegraaf.nl/*",
+    "*://*.the-american-interest.com/*",
+    "*://*.the-tls.co.uk/*",
+    "*://*.theadvocate.com.au/*",
+    "*://*.theathletic.com/*",
+    "*://*.theathletic.co.uk/*",
+    "*://*.thecourier.com.au/*",
+    "*://*.theglobeandmail.com/*",
+    "*://*.thehindu.com/*",
+    "*://*.thestar.com/*",
+    "*://*.thewrap.com/*",
+    "*://*.trouw.nl/*",
+    "*://*.volkskrant.nl/*",
+    "*://*.washingtonpost.com/*",
+    "*://*.wsj.com/*",
+    "*://*.hbr.org/*"
+    ],
+      "js": ["src/js/contentScript.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "src/html/popup.html",
+    "default_icon": {
+      "128": "images/balanced_news_icon.png"
+    }
+  },
+  "description": "Read news all across the political spectrum",
+  "homepage_url": "https://www.linkedin.com/in/carol-yueming-chen/",
+  "icons": {
+    "128": "images/balanced_news_icon.png"
+  },
+  "manifest_version": 2,
+  "name": "Balanced News",
+  "short_name": "Balanced News",
+  "options_ui": {
+    "chrome_style": false,
+    "page": "src/html/options.html"
+  },
+  "permissions": [
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "version": "1.7.4"
+}

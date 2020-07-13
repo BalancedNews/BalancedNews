@@ -74,7 +74,7 @@
     "page": "src/html/options.html"
   },
   "permissions": [
-    "cookies",
+    "tabs",
     "webRequest",
     "webRequestBlocking",
     "<all_urls>"

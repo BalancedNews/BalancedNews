@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Newsbot Chrome Extension</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+<body class="pc" style="width: 240px; height: 400px;">
+  <div id="error" class="overlay"></div>
+  <div id="loader" class="overlay" style="display: none;"></div>
+  <div id="wrapper"><div class="index wrapper"><div class="actions">
+  <div class="shortcut follow-shortcut" title="Shortcut to show related articles">
+    Hi There
+  </div>
+  <ul class="nav">
+    <li class="stories" title="Stories you are following"><a href="#/stories"><img src="/images/icon-mail.png" srcset="/images/icon-mail.svg">Following</a></li>
+    <li class="sources"><a href="http://getnewsbot.com/sources?locale=en" target="_blank" title="Settings"><img src="/images/icon-sources-alt.png" srcset="/images/icon-sources-alt.svg">Sources</a></li>
+    <li class="feedback"><a href="#/feedback" title="Tell us what you think"><img src="/images/icon-feedback.png" srcset="/images/icon-feedback.svg">Feedback</a></li>
+    <li class="help"><a href="http://getnewsbot.com/help?locale=en" target="_blank" title="Help"><img src="/images/icon-help.png" srcset="/images/icon-help.svg">Help</a></li>
+  </ul>
+  <a href="#" class="button" id="give-me-5" title="Show related articles">Give me 3</a>
+  <ul class="gimme-5-time">
+    <li title="Published past 24 hours" id="time-24h" class="show-tooltip" data-target=".label.one" data-value="24h">24h</li>
+    <li title="Published past week" id="time-1w" class="show-tooltip" data-target=".label.two" data-value="1w">1w</li>
+    <li title="Published since December 2014" id="time-all" class="show-tooltip active" data-target=".label.four" data-value="all">all</li>
+  </ul>
+  <div class="label one"><div class="triangle"></div>Content from past 24 hours</div>
+  <div class="label two"><div class="triangle"></div>Content from past week</div>
+  <div class="label three"><div class="triangle"></div>Content from past month</div>
+  <div class="label four"><div class="triangle"></div>All content</div>
+  <a href="#" class="button show-tooltip" id="follow-button" data-target=".label.five">Follow this story</a>
+  <div class="label five"><div class="triangle"></div>Email when related article published</div>
+</div>
+
+<a href="https://lateral.io/publishing" target="_blank" id="footer" title="Knowledge discovery API"><img src="../../images/balanced_news_long_logo.png"></a>
+<div class="social-footer">
+  <a href="https://www.linkedin.com/in/carol-yueming-chen/" target="_blank" id="review" class="show-tooltip" data-target="#review span">Love BalancedNews?<span class="">😍</span></a>
+</div>
+
+</div></div>
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="app.js"></script>
+
+
+</body>
+</html>

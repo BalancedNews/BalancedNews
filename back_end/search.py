@@ -1,4 +1,5 @@
-import requests
+from botocore.vendored import requests #Used only for AWS Lambda Internal, otherwise, use the one below
+# import requests
 
 __params_template = {
   'api_key': '5C42256FAF1E41E99E269259A6F52DDD',

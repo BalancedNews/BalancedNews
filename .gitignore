@@ -1,6 +1,8 @@
 # Python Virtual Environment
-back_end/venv
+*/venv
 
 # PyCharm Project Configuration
-back_end/.idea
-data/.idea
+*/.idea
+
+# Google Cookie
+*/.google-cookie

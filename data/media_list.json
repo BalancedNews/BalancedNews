@@ -1,0 +1,167 @@
+[
+    [
+        "ABC News",
+        "-0.56",
+        "abcnews.go.com"
+    ],
+    [
+        "Bloomberg",
+        "-0.24",
+        "www.bloomberg.com"
+    ],
+    [
+        "Boston Globe",
+        "-0.33",
+        "www.bostonglobe.com"
+    ],
+    [
+        "Breitbart",
+        "0.95",
+        "www.breitbart.com"
+    ],
+    [
+        "Business Insider",
+        "-0.06",
+        "businessinsider.com"
+    ],
+    [
+        "CBS News",
+        "-0.31",
+        "www.cbsnews.com"
+    ],
+    [
+        "CNBC",
+        "0.12",
+        "www.cnbc.com"
+    ],
+    [
+        "CNN",
+        "-0.36",
+        "www.cnn.com"
+    ],
+    [
+        "Daily Caller",
+        "0.88",
+        "dailycaller.com"
+    ],
+    [
+        "Daily Mail",
+        "0.71",
+        "www.dailymail.co.uk"
+    ],
+    [
+        "FiveThirtyEight",
+        "-0.74",
+        "fivethirtyeight.com"
+    ],
+    [
+        "Forbes",
+        "0.02",
+        "www.forbes.com"
+    ],
+    [
+        "Fox News",
+        "0.87",
+        "www.foxnews.com"
+    ],
+    [
+        "Guardian",
+        "-0.61",
+        "www.theguardian.com"
+    ],
+    [
+        "Huffington Post",
+        "-0.78",
+        "www.huffingtonpost.ca"
+    ],
+    [
+        "LA Times",
+        "-0.39",
+        "www.latimes.com"
+    ],
+    [
+        "Mother Jones",
+        "-0.86",
+        "www.motherjones.com"
+    ],
+    [
+        "MSNBC",
+        "-0.67",
+        "www.msnbc.com"
+    ],
+    [
+        "National Review",
+        "0.54",
+        "www.nationalreview.com"
+    ],
+    [
+        "New York magazine",
+        "-0.71",
+        "nymag.com"
+    ],
+    [
+        "New York Times",
+        "-0.53",
+        "www.nytimes.com"
+    ],
+    [
+        "Politico",
+        "-0.29",
+        "www.politico.com"
+    ],
+    [
+        "Real Clear Politics",
+        "0.22",
+        "www.realclearpolitics.com"
+    ],
+    [
+        "Salon",
+        "-0.82",
+        "www.salon.com"
+    ],
+    [
+        "Talking Points Memo",
+        "-0.81",
+        "talkingpointsmemo.com"
+    ],
+    [
+        "The Daily Beast",
+        "-0.72",
+        "www.thedailybeast.com"
+    ],
+    [
+        "The Hill",
+        "-0.05",
+        "thehill.com"
+    ],
+    [
+        "US News & World Report",
+        "-0.2",
+        "www.usnews.com"
+    ],
+    [
+        "Vox",
+        "-0.84",
+        "www.vox.com"
+    ],
+    [
+        "Wall Street Journal",
+        "0.05",
+        "www.wsj.com"
+    ],
+    [
+        "Washington Examiner",
+        "0.82",
+        "www.washingtonexaminer.com"
+    ],
+    [
+        "Washington Post",
+        "-0.51",
+        "www.washingtonpost.com"
+    ],
+    [
+        "Washington Times",
+        "0.76",
+        "www.washingtontimes.com"
+    ]
+]

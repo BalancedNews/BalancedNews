@@ -40,6 +40,7 @@ def _extractDomain(url):
     # type: (str) -> str
     url = url.replace("https://","")
     url = url.replace("http://","")
+    url = url.replace("www.","")
     url = url[:url.index("/")]
     return url
     

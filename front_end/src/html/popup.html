@@ -5,36 +5,36 @@
   <title>Newsbot Chrome Extension</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="pc" style="width: 240px; height: 400px;">
-  <div id="error" class="overlay"></div>
-  <div id="loader" class="overlay" style="display: none;"></div>
-  <div id="wrapper"><div class="index wrapper"><div class="actions">
-  <div class="shortcut follow-shortcut" title="Shortcut to show related articles">
-    Hi There
-  </div>
-  <ul class="nav">
-    <li class="square1">1</li>
-    <li class="square2">2</li>
-    <li class="square3">3</li>
-    <li class="square4">4</li>
-  </ul>
-  <a href="#" class="button" id="random" title="Show related articles">5</a>
-  <div></div>
-  <ul class="gimme-5-time">
-    <li title="Published past 24 hours" id="time-24h" class="show-tooltip" data-target=".label.one" data-value="24h">6</li>
-    <li title="Published past week" id="time-1w" class="show-tooltip" data-target=".label.two" data-value="1w">7</li>
-    <li title="Published since December 2014" id="time-all" class="show-tooltip active" data-target=".label.four" data-value="all">8</li>
-  </ul>
-  <a href="#" class="button show-tooltip" id="get-news-button" data-target=".label.five">Balance News</a>
+
+<body>
+
+<div class="topnav">
+    <img src="balanced_news_long_logo.png" height="70">
 </div>
 
-<a href="https://github.com/shawnpang/BalancedNews" target="_blank" id="footer" title="Knowledge discovery API"><img src="../../images/balanced_news_long_logo.png"></a>
-<div class="social-footer">
-  <a href="https://www.linkedin.com/in/carol-yueming-chen/" target="_blank" id="review" class="show-tooltip" data-target="#review span">Love BalancedNews?<span class="">😍</span></a>
+<div class="content_top">
+      <p class="text_top_1">The news website you’re on is left-leaning</p>
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <button class="text_top_2">Explain this Partisan Score scale to me</button>
+
 </div>
 
-</div></div>
-<script defer src="../js/popup.js"></script>
+<div class="content_bottom">
+     <div class="buttons">
+    <button class="btn-hover color-7">Balance My News</button>
+      <p class="text_bottom">Have feedback for us?</p>
+      <p class="text_bottom">Learn more about Balanced News</p>
+   </div>
+
+</div>
+
+
+<div class="footer">
+  <p>Created in an effort to bridge political polarization. </p>
+  <p>Thanks to generous financial support from Equal Voice </p>
+  <p>and the Department for Women and Gender Equality.</p>
+</div>
+
 </body>
 
 </html>

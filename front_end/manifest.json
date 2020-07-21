@@ -56,8 +56,9 @@
       "js": ["src/js/contentScript.js"]
     }
   ],
-  "browser_action": {
+  "page_action": {
     "default_popup": "src/html/popup.html",
+    "default_title" : "Click to read balanced news!",
     "default_icon": {
       "128": "images/balanced_news_icon.png"
     }
@@ -79,7 +80,7 @@
     "tabs",
     "webRequest",
     "webRequestBlocking",
-    "<all_urls>"
+    "declarativeContent"
   ],
   "version": "1.7.4"
 }

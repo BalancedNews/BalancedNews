@@ -27,4 +27,3 @@ function sendNotification(title, message, link) {
     chrome.notifications.clear('sendNews')
     console.log("Creating Done")
 }
-

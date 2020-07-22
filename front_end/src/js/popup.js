@@ -4,6 +4,11 @@ if(GET_NEWS_BUTTON){
 }
 
 function requestBalancedNews() {
+    // Get current tab's URL and name
+    var currentURL;
+    var currentTitle;
+
+    console.log("Requesting!");
     sendNotification("tiiitle","meeeeeesg","https://www.google.com/")
 }
 

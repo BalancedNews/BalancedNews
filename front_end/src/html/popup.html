@@ -4,6 +4,17 @@
   <meta charset="utf-8">
   <title>Newsbot Chrome Extension</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <script defer type="text/javascript" src="../js/lib/axios/dist/axios.standalone.js"></script>
+  <script defer type="text/javascript" src="../js/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script defer type="text/javascript" src="../js/lib/CryptoJS/rollups/sha256.js"></script>
+  <script defer type="text/javascript" src="../js/lib/CryptoJS/components/hmac.js"></script>
+  <script defer type="text/javascript" src="../js/lib/CryptoJS/components/enc-base64.js"></script>
+  <script defer type="text/javascript" src="../js/lib/url-template/url-template.js"></script>
+  <script defer type="text/javascript" src="../js/lib/apiGatewayCore/sigV4Client.js"></script>
+  <script defer type="text/javascript" src="../js/lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script defer type="text/javascript" src="../js/lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script defer type="text/javascript" src="../js/lib/apiGatewayCore/utils.js"></script>
+  <script defer type="text/javascript" src="../js/apigClient.js"></script>
   <script defer type="text/javascript" src="../js/popup.js"></script>
 </head>
 
@@ -14,8 +25,8 @@
 </div>
 
 <div class="content_top">
-      <p class="text_top_1">The news website you’re on is left-leaning</p>
-      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <p class="text_top_1">The news website you’re on is ...</p>
+      <input type="range" min="-100" max="100" value="0" class="slider" id="myRange">
       <button class="text_top_2">Explain this Partisan Score scale to me</button>
 
 </div>
@@ -37,5 +48,6 @@
 </div>
 
 </body>
+
 
 </html>

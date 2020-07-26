@@ -2,11 +2,10 @@ function main(){
   console.log("   Method - Main");
   getCurrentTab(rateCurrentNews);
   const GET_NEWS_BUTTON = document.querySelector("#get-news-button")
-  GET_NEWS_BUTTON.addEventListener("click",
-                  function(){getCurrentTab(getBalancedNews);})
-  // const GET_NEWS_BUTTON = document.querySelector("#get-news-button")
-  // GET_NEWS_BUTTON.addEventListener("click",
-  //                 function(){sendNotification("Test title", "test message", "https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html");})
+  if(GET_NEWS_BUTTON){
+    GET_NEWS_BUTTON.addEventListener("click",
+                    function(){getCurrentTab(getBalancedNews);})
+  }
 
 }
 
@@ -100,7 +99,7 @@ function sendNotification(title, message, link) {
     console.log("   Method - sendNotification");
     console.log(title, message, link);
 
-    chrome.notifications.clear('test');
+    chrome.notifications.clear('test2');
     chrome.notifications.onClicked.addListener(function(){
         window.open(link);
         window.focus();
@@ -112,7 +111,8 @@ function sendNotification(title, message, link) {
         message: message,
         requireInteraction: true,
     };
-    chrome.notifications.create('test', notifOptions);
+    chrome.notifications.create('test2', notifOptions);
+    chrome.notifications.clear('test2');
     console.log("   Notification pushed")
 }
 main();

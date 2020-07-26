@@ -21,7 +21,6 @@ body {
   width: 308px;
   height: 70px;
   display: block;
-  margin-left: 60px;
 }
 
 /* Style the Button */
@@ -129,7 +128,7 @@ body {
 }
 
 button.active.focus, button.active:focus,
-button.focus, button:active.focus, 
+button.focus, button:active.focus,
 button:active:focus, button:focus {
   outline: none;
   box-shadow: none;

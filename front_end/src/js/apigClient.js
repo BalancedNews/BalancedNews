@@ -51,7 +51,7 @@ apigClientFactory.newClient = function (config) {
         config.defaultAcceptType = 'application/json';
     }
 
-    
+
     // extract endpoint and path from url
     var invokeUrl = 'https://qkgvguxfhf.execute-api.us-east-2.amazonaws.com/test';
     var endpoint = /(^https?:\/\/[^\/]+)/g.exec(invokeUrl)[1];
@@ -80,14 +80,14 @@ apigClientFactory.newClient = function (config) {
     };
 
     var apiGatewayClient = apiGateway.core.apiGatewayClientFactory.newClient(simpleHttpClientConfig, sigV4ClientConfig);
-    
-    
-    
+
+
+
     apigClient.balancednewsGet = function (params, body, additionalParams) {
         if(additionalParams === undefined) { additionalParams = {}; }
-        
+
         apiGateway.core.utils.assertParametersDefined(params, [], ['body']);
-        
+
         var balancednewsGetRequest = {
             verb: 'get'.toUpperCase(),
             path: pathComponent + uritemplate('/balancednews').expand(apiGateway.core.utils.parseParametersToObject(params, [])),
@@ -95,11 +95,11 @@ apigClientFactory.newClient = function (config) {
             queryParams: apiGateway.core.utils.parseParametersToObject(params, []),
             body: body
         };
-        
-        
+
+
         return apiGatewayClient.makeRequest(balancednewsGetRequest, authType, additionalParams, config.apiKey);
     };
-    
+
 
     return apigClient;
 };

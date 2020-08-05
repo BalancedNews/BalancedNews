@@ -1,4 +1,12 @@
 function main(){
+  var greeting = `
+    Hi! Thanks for checking out our code! This is only our beta version and
+    we will continuously strive to improve our product. We have a very
+    professional back-end developer from ByteDance, but we are still looking
+    for a front-end developer to join us!
+    Please email me at spang.hba2021@ivey.ca if you are interested!
+  `
+  console.log(greeting);
   console.log("   Method - Main");
   getCurrentTab(rateCurrentNews);
   const GET_NEWS_BUTTON = document.querySelector("#get-news-button")
@@ -99,7 +107,8 @@ function sendNotification(title, message, link) {
     console.log("   Method - sendNotification");
     console.log(title, message, link);
 
-    chrome.notifications.clear('test2');
+    var randNotifID = Math.random().toString()
+    chrome.notifications.clear(randNotifID);
     chrome.notifications.onClicked.addListener(function(){
         window.open(link);
         window.focus();
@@ -111,8 +120,8 @@ function sendNotification(title, message, link) {
         message: message,
         requireInteraction: true,
     };
-    chrome.notifications.create('test2', notifOptions);
-    chrome.notifications.clear('test2');
+    chrome.notifications.create(randNotifID, notifOptions);
+    chrome.notifications.clear(randNotifID);
     console.log("   Notification pushed")
 }
 main();

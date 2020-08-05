@@ -5,57 +5,6 @@
       "src/js/popup.js"
     ]
   },
-  "content_scripts": [
-    {
-    "matches": [
-    "*://*.ad.nl/*",
-    "*://*.afr.com/*",
-    "*://*.americanbanker.com/*",
-    "*://*.bizjournals.com/*",
-    "*://*.bloomberg.com/*",
-    "*://*.bloombergquint.com/*",
-    "*://*.businessinsider.com/*",
-    "*://*.caixinglobal.com/*",
-    "*://*.canberratimes.com.au/*",
-    "*://*.economist.com/*",
-    "*://*.ed.nl/*",
-    "*://*.elpais.com/*",
-    "*://*.estadao.com.br/*",
-    "*://*.examiner.com.au/*",
-    "*://*.firstthings.com/*",
-    "*://*.ft.com/*",
-    "*://*.haaretz.co.il/*",
-    "*://*.ledevoir.com/*",
-    "*://*.leparisien.fr/*",
-    "*://*.medium.com/*",
-    "*://*.mexiconewsdaily.com/*",
-    "*://*.nytimes.com/*",
-    "*://*.nzherald.co.nz/*",
-    "*://*.parool.nl/*",
-    "*://*.repubblica.it/*",
-    "*://*.sfchronicle.com/*",
-    "*://*.sloanreview.mit.edu/*",
-    "*://*.techinasia.com/*",
-    "*://*.telegraaf.nl/*",
-    "*://*.the-american-interest.com/*",
-    "*://*.the-tls.co.uk/*",
-    "*://*.theadvocate.com.au/*",
-    "*://*.theathletic.com/*",
-    "*://*.theathletic.co.uk/*",
-    "*://*.thecourier.com.au/*",
-    "*://*.theglobeandmail.com/*",
-    "*://*.thehindu.com/*",
-    "*://*.thestar.com/*",
-    "*://*.thewrap.com/*",
-    "*://*.trouw.nl/*",
-    "*://*.volkskrant.nl/*",
-    "*://*.washingtonpost.com/*",
-    "*://*.wsj.com/*",
-    "*://*.hbr.org/*"
-    ],
-      "js": ["src/js/contentScript.js"]
-    }
-  ],
   "page_action": {
     "default_popup": "src/html/popup.html",
     "default_title" : "Click to read balanced news!",
@@ -79,7 +28,6 @@
     "notifications",
     "tabs",
     "webRequest",
-    "webRequestBlocking",
     "declarativeContent"
   ],
   "version": "1.7.4"

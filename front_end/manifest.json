@@ -5,18 +5,23 @@
       "src/js/popup.js"
     ]
   },
+
+  "icons": {
+    "128": "images/icon_128.png",
+    "48": "images/icon_48.png",
+    "16": "images/icon_16.png"
+  },
   "page_action": {
     "default_popup": "src/html/popup.html",
     "default_title" : "Click to read balanced news!",
     "default_icon": {
-      "128": "images/balanced_news_icon.png"
+      "128": "images/icon_128.png"
     }
   },
-  "description": "Read news all across the political spectrum",
-  "homepage_url": "https://www.linkedin.com/in/carol-yueming-chen/",
-  "icons": {
-    "128": "images/balanced_news_icon.png"
-  },
+
+
+  "description": "Balanced news across the political spectrum",
+  "homepage_url": "http://balancednews.github.io/",
   "manifest_version": 2,
   "name": "Balanced News",
   "short_name": "Balanced News",
@@ -30,5 +35,5 @@
     "webRequest",
     "declarativeContent"
   ],
-  "version": "1.7.4"
+  "version": "1.8.1"
 }
